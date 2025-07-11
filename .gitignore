@@ -1,2 +1,100 @@
-/.vscode
-/build
+# --- General C / C++ -------------------------------------------------
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.bsc
+*.stackdump
+*.map
+
+# CUDA intermediate / cache files
+*.cubin
+*.ptx
+*.cudafe*
+*.fatbin.c
+*.nvlink.*
+*.nvvm.*
+
+# --- Build systems ---------------------------------------------------
+# CMake
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/cmake_install.cmake
+/install_manifest.txt
+/_deps/
+/Testing/
+CTestTestfile.cmake
+DartConfiguration.tcl
+
+# Visual Studio / MSBuild (in case someone generates VS project files)
+*.vcxproj*
+*.sln
+*.vcproj*
+*.opensdf
+*.sdf
+*.cache
+*.db
+*.filters
+*.user
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+/.vs/
+
+# Ninja generator
+/build.ninja
+/.ninja_deps
+/.ninja_log
+
+# --- IDEs & editors --------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS-specific -----------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- SFML binaries (keep source/headers, ignore pre-built outputs) ---
+SFML/**/bin/
+SFML/**/lib/
+SFML/**/Debug/
+SFML/**/Release/
+
+# --- Test & coverage artifacts --------------------------------------
+/tests/build/
+/coverage/
+/*.gcda
+/*.gcno
+/*.gcov
+
+# --- Installer / packaging artifacts --------------------------------
+*.msi
+*.cab
+*.iso
+*.tar
+*.gz
+*.zip
+
+# --- Logs & temps ----------------------------------------------------
+*.log
+*.tmp
+*.temp
